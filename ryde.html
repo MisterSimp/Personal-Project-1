@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ryde.css">
+</head>
+
+<body>
+    <form>
+        <p>
+            <label for="Month">Month</label>
+            <select name="month" id="month">
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+        </p>
+        <p>
+            <label for="rydePrice">Ryde Price</label>
+            <input type="text" id="rydePrice" required>
+        </p>
+        <p>
+            <button>Submit</button>
+        </p>
+    </form>
+    <h2>Total Earned: 0</h2>
+    <button id='calculate'>Calculate</button>
+    <table>
+        <thead>
+            <tr>
+                <td>Month</td>
+                <td>Trip Price</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <form action="main.html">
+        <button>Back To Main Menu</button>
+    </form>
+    <script src="ryde.js"></script>
+</body>
+
+</html>

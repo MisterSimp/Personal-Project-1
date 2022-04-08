@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tuitionearnings.css">
+</head>
+
+<body>
+    <form>
+        <p>
+            <label for="tuition">Tuition</label>
+            <select name="tuition" id="tuition">
+                <option value="Private Tuition">Private Tuition</option>
+                <option value="Tuition Center">Tuition Center</option>
+            </select>
+        </p>
+        <p>
+            <label for="Month">Month</label>
+            <select name="month" id="month">
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+        </p>
+        <p>
+            <label for="hours">Hours</label>
+            <input type="text" id="hours">
+        </p>
+        <p>
+            <label for="rates">Rates</label>
+            <input type="text" id="rates">
+        </p>
+        <p>
+            <button>Submit</button>
+        </p>
+    </form>
+    <h2>Total Earned = 0</h2>
+    <label for="monthFilter">Filter By Month</label>
+    <select name="monthFilter" id="monthFilter">
+        <option value="None">None</option>
+        <option value="Jan">Jan</option>
+        <option value="Feb">Feb</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="Aug">Aug</option>
+        <option value="Sep">Sep</option>
+        <option value="Oct">Oct</option>
+        <option value="Nov">Nov</option>
+        <option value="Dec">Dec</option>
+    </select>
+    <div id='calculate'>
+        <button>Calculate</button>
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Tuition</th>
+                <th>Month</th>
+                <th>Hours</th>
+                <th>Rates</th>
+                <th>Earned</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="buttonContainer">
+        <form action="main.html">
+            <button>Back To Main Page</button>
+        </form>
+    </div>
+    <script src="tuitionearnings.js"></script>
+</body>
+
+</html>
