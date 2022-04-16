@@ -1,22 +1,76 @@
-button {
-    font-size: 20px;
-    color: white;
-    padding: 10px 20px 10px 20px;
-    background-color: cornflowerblue;
-    margin: 30px;
-    border-radius: 20px;
-    border: 3px solid black;
+* {
+    box-sizing: border-box;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-button:hover {
-    background-color: blue;
+html {
+    background-color: white;
 }
 
-#buttonContainer {
-    margin-top: 5%;
+body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 470px;
+    height: auto;
+    background-color: black;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.buttonGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 10px;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.number {
+    color: white;
+    background-color: dimgray;
+}
+
+.number:hover {
+    background-color: rgb(145, 140, 140);
+}
+
+.allClear,
+.negative,
+.percentage {
+    color: black;
+    background-color: cyan;
+}
+
+.operant {
+    color: white;
+    background-color: orange;
+}
+
+.operant:hover {
+    color: orange;
+    background-color: white;
+}
+
+#spanTwo {
+    grid-column: span 2;
+    width: 200px;
+    border-radius: 50px;
+    text-align: left;
+    text-indent: 30px;
+}
+
+.totalValue {
+    text-align: right;
+    color: white;
+    margin: 20px;
+    font-size: 60px;
 }

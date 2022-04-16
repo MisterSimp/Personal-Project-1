@@ -5,22 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div id="buttonContainer">
-        <form action="monthlyexpenses.html">
-            <button>Monthly Expenses</button>
-        </form>
-        <form action="tuitionearnings.html">
-            <button>Tuition Earnings</button>
-        </form>
-        <form action="ryde.html">
-            <button>Ryde Earnings</button>
-        </form>
+    <div class="totalValue">0</div>
+    <div class="buttonGrid">
+        <button class="allClear">AC</button>
+        <button class="negative"><sup>+</sup>/<sub>-</sub></button>
+        <button class="percentage">%</button>
+        <button class="operant">÷</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operant">*</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operant">-</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operant">+</button>
+        <button class="number" id='spanTwo'>0</button>
+        <button class="number">.</button>
+        <button class="operant">=</button>
     </div>
+    <script src="calculator.js"></script>
 </body>
 
 </html>
